@@ -2,17 +2,18 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title>Tab 1</ion-title>
+        <ion-title><img src="public\assets\icon\SouthHillsWebDark.png" /></ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">Tab 1</ion-title>
+          <ion-title size="large">Business Programs</ion-title>
         </ion-toolbar>
       </ion-header>
-    
-      <ExploreContainer name="Tab 1 page" />
+      
+      <Menu /> <!--Menu Component--> 
+      <ExploreContainer name="Business Programs" />
     </ion-content>
   </ion-page>
 </template>
@@ -20,9 +21,10 @@
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
 import ExploreContainer from '@/components/ExploreContainer.vue';
+import Menu from "@/components/Menu.vue";
 
 export default  {
   name: 'Tab1',
-  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+  components: { Menu, ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
 }
 </script>

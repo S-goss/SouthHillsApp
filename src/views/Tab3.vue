@@ -12,7 +12,8 @@
         </ion-toolbar>
       </ion-header>
       
-      <ExploreContainer name="Tab 3 page" />
+      <Menu /> <!--Menu Component--> 
+      <ExploreContainer name="Technology Programs" />
     </ion-content>
   </ion-page>
 </template>
@@ -20,9 +21,10 @@
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
 import ExploreContainer from '@/components/ExploreContainer.vue';
+import Menu from "@/components/Menu.vue";
 
 export default  {
   name: 'Tab3',
-  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+  components: { Menu, ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
 }
 </script>
