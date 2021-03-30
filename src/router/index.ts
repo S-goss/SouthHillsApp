@@ -13,23 +13,27 @@ const routes: Array<RouteRecordRaw> = [
     children: [
       {
         path: '',
-        redirect: '/tabs/tab1'
+        redirect: '/tabs/home'
       },
       {
         path: 'home',
         component: () => import('@/views/Home.vue')
       },
       {
-        path: 'tab1',
-        component: () => import('@/views/Tab1.vue')
+        path: 'businessprograms',
+        component: () => import('@/views/BusinessPrograms.vue')
       },
       {
-        path: 'tab2',
-        component: () => import('@/views/Tab2.vue')
+        path: 'healthcarePrograms',
+        component: () => import('@/views/HealthcarePrograms.vue')
       },
       {
-        path: 'tab3',
-        component: () => import('@/views/Tab3.vue')
+        path: 'technologyPrograms',
+        component: () => import('@/views/TechnologyPrograms.vue')
+      },
+      {
+        path: 'contactForm',
+        component: () => import('@/views/ContactForm.vue')
       }
     ]
   }

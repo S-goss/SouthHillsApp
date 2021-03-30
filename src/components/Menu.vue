@@ -9,10 +9,10 @@
       <ion-content>
         <ion-list>
           <ion-item><a href="/tabs/home">Home</a></ion-item>
-          <ion-item><a href="/tabs/tab1">Business Programs</a></ion-item>
-          <ion-item><a href="/tabs/tab2">Healthcare Programs</a></ion-item>
-          <ion-item><a href="/tabs/tab3">Technology Programs</a></ion-item>
-          <ion-item><a href="/tabs/tab3">Contact Us</a></ion-item>
+          <ion-item><a href="/tabs/businessprograms">Business Programs</a></ion-item>
+          <ion-item><a href="/tabs/healthcarePrograms">Healthcare Programs</a></ion-item>
+          <ion-item><a href="/tabs/technologyPrograms">Technology Programs</a></ion-item>
+          <ion-item><a href="/tabs/contactForm">Contact Us</a></ion-item>
         </ion-list>
       </ion-content>
     </ion-menu>

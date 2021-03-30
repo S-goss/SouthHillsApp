@@ -24,7 +24,7 @@ import ExploreContainer from '@/components/ExploreContainer.vue';
 import Menu from "@/components/Menu.vue";
 
 export default  {
-  name: 'Tab1',
+  name: 'businessPrograms',
   components: { Menu, ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
 }
 </script>
