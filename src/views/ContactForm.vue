@@ -13,18 +13,18 @@
       </ion-header>
       
       <Menu /> <!--Menu Component--> 
-      <ExploreContainer name="Contact Form" />
+      <Contact /> 
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
+import Contact from '@/components/Contact.vue';
 import Menu from "@/components/Menu.vue";
 
 export default  {
   name: '',
-  components: { Menu, ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+  components: { Menu, Contact, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
 }
 </script>
