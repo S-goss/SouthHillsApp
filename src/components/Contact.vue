@@ -2,6 +2,10 @@
   <div id="container">
     <strong>Interested In Applying? </strong>
     <p>Fill Out This form to get Connected <br> to a recuiter Today!</p>
+
+    <form>
+      
+    </form>
   </div>
 </template>
 
