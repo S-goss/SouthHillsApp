@@ -2,7 +2,8 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title><img height="40" src="public/assets/icon/favicon.ico" /></ion-title>
+        <ion-title
+          ><img height="40" src="public/assets/icon/favicon.ico"/></ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
@@ -12,30 +13,47 @@
         </ion-toolbar>
       </ion-header>
 
-      <Menu /> <!--Menu Component--> 
+      <Homepage />
+      <Menu />
+      <!--Menu Component-->
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
+import {
+  IonPage,
+  IonHeader,
+  IonToolbar,
+  IonTitle,
+  IonContent,
+} from "@ionic/vue";
 
-import {  IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-import Menu from '@/components/Menu.vue';
+import Homepage from "@/components/Homepage.vue";
+import Menu from "@/components/Menu.vue";
 
-export default  {
-  name: 'home',
-  components: { Menu, IonHeader, IonToolbar, IonTitle, IonContent, IonPage},
-  data () {
-  return {
-    publicPath: process.env.BASE_URL
-  }
-}
-}
+export default {
+  name: "home",
+  components: {
+    Homepage,
+    Menu,
+    IonHeader,
+    IonToolbar,
+    IonTitle,
+    IonContent,
+    IonPage,
+  },
+  data() {
+    return {
+      publicPath: process.env.BASE_URL,
+    };
+  },
+};
 </script>
 
 <style scoped>
 .title-image {
-    margin-top: 8px;
-    height: 27px;
+  margin-top: 8px;
+  height: 27px;
 }
 </style>
