@@ -2,7 +2,7 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title><img src="public\assets\icon\SouthHillsWebDark.png" /></ion-title>
+        <ion-title><img height="50" src="https://www.southhills.edu/wp-content/uploads/2015/07/SouthHillsWeb.jpg" alt="South Hills"/></ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
